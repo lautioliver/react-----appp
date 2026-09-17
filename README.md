@@ -18,3 +18,17 @@ You can also try [the experimental native React Compiler support in plugin-react
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 # react-----appp
+
+## GitHub Pages
+
+La app se publica en: https://lautioliver.github.io/react-----appp/
+
+1. Subí los cambios a `main`.
+2. En el repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+3. El workflow se dispara solo en cada push a `main`.
+
+También podés publicar a mano con:
+
+```bash
+npm run deploy
+```
