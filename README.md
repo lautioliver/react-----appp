@@ -23,12 +23,10 @@ If you are developing a production application, we recommend using TypeScript wi
 
 La app se publica en: https://lautioliver.github.io/react-----appp/
 
-1. Subí los cambios a `main`.
-2. En el repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. El workflow se dispara solo en cada push a `main`.
+Si ves una página en blanco, GitHub está sirviendo el código fuente en vez del build. En el repo:
 
-También podés publicar a mano con:
+**Settings → Pages → Build and deployment → Source: GitHub Actions**
 
-```bash
-npm run deploy
-```
+No uses `Deploy from a branch` con `main`. Esa opción publica `index.html` crudo y React no arranca.
+
+Después, en **Actions**, volvé a correr el workflow *Deploy static content to Pages*.
