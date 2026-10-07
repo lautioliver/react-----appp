@@ -52,6 +52,10 @@ function App() {
     <>
       <h1>Hello World</h1>
 
+      <div className="container">
+      <img src="./public/images.jpeg" alt="Hero" />
+      </div>
+
       <div className="blobs">
         <h2>Ejemplo de uso de Blobs</h2>
         <div className="blobs-botones">
