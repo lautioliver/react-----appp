@@ -1,13 +1,14 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
+  --text: #7a4a63;
+  --text-h: #3d0a26;
+  --bg: #fff0f6;
+  --border: #f9c6dc;
+  --code-bg: #ffe0ee;
+  --accent: #e91e78;
+  --accent-hover: #c2185b;
+  --accent-bg: rgba(233, 30, 120, 0.1);
+  --accent-border: rgba(233, 30, 120, 0.5);
+  --social-bg: rgba(255, 224, 238, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
@@ -19,7 +20,7 @@
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
-  background: var(white);
+  background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -32,15 +33,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
+    --text: #e8b4cc;
+    --text-h: #ffe4f0;
+    --bg: #2a0f1d;
+    --border: #5c2742;
+    --code-bg: #3a1528;
+    --accent: #ff6fae;
+    --accent-hover: #ff8fc1;
+    --accent-bg: rgba(255, 111, 174, 0.15);
+    --accent-border: rgba(255, 111, 174, 0.5);
+    --social-bg: rgba(92, 39, 66, 0.5);
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
@@ -52,14 +54,14 @@
 
 body {
   margin: 0;
+  background: var(--bg);
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -70,7 +72,7 @@ h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  color: var(black);
+  color: var(--text-h);
 }
 
 h1 {
@@ -109,4 +111,8 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+main.app {
+  flex: 1;
 }
